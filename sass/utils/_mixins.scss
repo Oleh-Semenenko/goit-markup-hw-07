@@ -1,0 +1,7 @@
+@mixin generateIcons {
+    @each $iconName in $icons {
+        .icon-#{$iconName} {
+            background-image: url(../images/#{$iconName}.svg);
+        }
+    }
+}
