@@ -30,6 +30,7 @@
 }
 
 .hero__btn {
+    @extend .button;
     display: block;
     padding: 10px 32px;
     margin: 0 auto;

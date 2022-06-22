@@ -193,6 +193,7 @@
 }
 
 .modal__send-button {
+    @extend .button;
     display: flex;
     align-items: center;
     padding: 10px 55px;

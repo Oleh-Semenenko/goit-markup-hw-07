@@ -31,30 +31,18 @@
     height: 75px;
 }
 
-.features__item::before {
-    display: block;
-    content: "";
-    background-color: var(--secondary-background);
-    height: 120px;
-    background-size: 70px 70px;
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 4px;
-    margin-bottom: 30px;
+.features__item {
+    &::before {
+        display: block;
+        content: "";
+        background-color: var(--secondary-background);
+        height: 120px;
+        background-size: 70px 70px;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 4px;
+        margin-bottom: 30px;
+    }
 }
 
-.icon-antenna::before {
-    background-image: url(../images/antenna.svg);
-}
-
-.icon-clock::before {
-    background-image: url(../images/clock.svg);
-}
-
-.icon-diagram::before {
-    background-image: url(../images/diagram.svg);
-}
-
-.icon-astronaut::before {
-    background-image: url(../images/astronaut.svg);
-}
+@include generateIcons($icons);

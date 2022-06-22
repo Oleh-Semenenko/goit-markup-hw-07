@@ -1,4 +1,3 @@
-@charset "UTF-8";
 :root {
   --primary-text-color: #757575;
   --title-text-color: #212121;
@@ -71,7 +70,7 @@ body {
   margin: -1px;
 }
 
-.button {
+.button, .modal__send-button, .subscribe-part__btn, .hero__btn {
   background-color: var(--accent-color);
   color: var(--white-text-color);
   min-width: 200px;
@@ -468,7 +467,6 @@ body {
   align-items: baseline;
 }
 
-/* Футер-адрес */
 .address-part {
   margin-right: auto;
 }
@@ -499,7 +497,6 @@ body {
   color: var(--accent-color);
 }
 
-/* Footer-join */
 .join-part {
   max-width: 206px;
   margin-right: 93px;
@@ -544,7 +541,6 @@ body {
   fill: var(--icon-secondary-color);
 }
 
-/* Footer__subscribe */
 .subscribe-part__title {
   color: var(--white-text-color);
   font-weight: 700;
